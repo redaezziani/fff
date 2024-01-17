@@ -47,7 +47,6 @@ const Projects = () => {
                 key={project.id}
                 className=" w-full  col-span-1 overflow-hidden flex flex-col justify-start items-center gap-4 "
               >
-
                   <img
                     className='w-full bg-slate-300  rounded-lg h-56 aspect-auto object-cover border border-slate-200 hover:border-slate-300 dark:border-slate-800 dark:hover:border-slate-700 shadow-sm transition duration-500'
                     src={''}
