@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import dog from '../assets/profile/doge.webp'
 import Animation from './animation/Animations.jsx'
 
 import { StarIcon } from './Icons'
@@ -14,17 +15,24 @@ const Projects = () => {
       className="relative w-full  mt-32 sm:mt-0 px-4 z-10 pt-8 pb-8 overflow-hidden"
     >
       
-      <div className="w-full max-w-6xl  mx-auto flex gap-2 justify-center items-center ">
-        <div className="rounded-full bg-yellow-200/50 border border-yellow-400/50 text-yellow-300 px-4 text-sm flex justify-start items-center gap-2  overflow-hidden before:absolute before:z-0   before:h-24 before:w-16 before:blur-lg before:animate-anime before:bg-[#fde90b3a] before:transform before:rotate-45   relative  py-0.5  backdrop-blur-xl">
-        <StarIcon className="w-4 h-auto text-yellow-300"/>
-        <p
-        className=' text-sm '
+      <a
+      className='mx-auto w-fit hidden rounded-full bg-gradient-to-r from-[#31bdc6] to-[#3178c6] p-[1px] brightness-90 contrast-150 focus:outline-none focus:ring-blue-600 focus-visible:ring-2 dark:brightness-125 dark:contrast-100 sm:block'
+      href="">
+        <div
+        className='group relative overflow-hidden rounded-full bg-white/80 px-3 py-1 duration-300 hover:pr-9 dark:bg-black/80'
         >
-          
-          check some of my projects 
-        </p>
+          <span
+          className='select-none bg-gradient-to-r from-[#31bdc6] to-[#3178c6] bg-clip-text text-transparent'
+          >
+            <svg class="mr-1 inline-block h-4 w-4 fill-[#31bdc6]" viewBox="4 4 48 48" xmlns="http://www.w3.org/2000/svg"><path d="m19.2 36.4-4.75-10.45L4 21.2l10.45-4.75L19.2 6l4.75 10.45L34.4 21.2l-10.45 4.75ZM36.4 42l-2.35-5.25-5.25-2.35 5.25-2.4 2.35-5.2 2.4 5.2 5.2 2.4-5.2 2.35Z"></path></svg>
+            see my projects
+            <img
+            className='absolute top-8 -right-2 w-8 h-8 rounded-full bg-white/80 duration-300  group-hover:top-2 group-hover:right-0 dark:bg-black/80'
+            src={dog}
+             alt="" srcset="" />
+          </span>
         </div>
-      </div>
+      </a>
       <div
         className=" max-w-6xl  mx-auto mt-0 mb-8 sm:mt-32  grid grid-cols-1 sm:grid-cols-3  gap-4 h-auto sm:h-[37.5rem]"
       >
